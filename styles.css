@@ -1,0 +1,143 @@
+/* Estilo Global */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f1f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com Banner */
+header {
+    background-color: #815c75;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('imagemmae.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd6e8;
+}
+
+/* Seção de Posts */
+section#posts {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Artigo */
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #815c75;
+}
+
+article h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+article h3 a:hover {
+    color: #815c75;
+}
+
+/* Botão Leia Mais */
+.button-read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: white;
+    background-color: #815c75;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-read-more:hover {
+    background-color: #9e758c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffd6e8;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+    }
+
+    section#posts {
+        padding: 20px;
+    }
+}
